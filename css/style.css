@@ -1,0 +1,295 @@
+/* переменные для основного цвета текста */
+:root {
+  --primary-text-color: #212121;
+  --titel-text-color: #757575;
+  --accent-color: #2196f3;
+  --maket-color: #ececec;
+  --section-dark-color: #2f303a;
+  --color-main-button: #ffffff;
+  --bac-color-buttons: #f5f4fa;
+}
+
+/* в body задаем цвет странички и цвет шрифта, стиль шрифта */
+body {
+  background-color: var(--maket-color);
+  color: var(--titel-text-color);
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+}
+
+/* Сброс отступов */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+/* Переопределила display в bloc  */
+img {
+  display: block;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  /* align-items: center; */
+
+  /* в конце работы убрать */
+  outline: 2px solid black;
+}
+/* ======================== COMPONENTS ===========================================*/
+/*Отменяем подчеркивание у ссылок */
+.link {
+  text-decoration: none;
+}
+
+/* сброс точек в li */
+.list {
+  list-style: none;
+}
+
+/* цвет текста заголовков */
+.heading,
+.heading-list-portfolio {
+  color: var(--primary-text-color);
+}
+
+/* цвет параграфов */
+.under-heading,
+.under-heading-portfilio {
+  color: var(--titel-text-color);
+}
+
+/* цвет фона для шапки и футера */
+.hero,
+.site-footer {
+  background-color: var(--section-dark-color);
+}
+/* ========================= END COMPONENTS================================*/
+/* ========================== HEADER ================================ */
+.header {
+  /* background-color: var(--color-main-button); */
+  background-color: salmon;
+  /* align-items: center; */
+
+  width: 1600px;
+  height: 80px;
+  left: 0px;
+  top: 0px;
+}
+
+.header-container {
+  display: flex;
+  /* Центрирование по вспомогательной оси */
+  align-items: center;
+щ}
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+/* LINE */
+.header-line {
+  width: 1600px;
+  height: 0px;
+  left: 0px;
+  top: 80px;
+
+  border: 1px solid var(--maket-color);
+}
+
+/* WebStudio */
+.logo-link {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+
+  margin-right: 90px;
+
+  color: var(--accent-color);
+}
+
+.header-color-info {
+  color: var(--accent-color);
+}
+.color-link-nav {
+  color: var(--primary-text-color);
+}
+
+.tel-link {
+  color: var(--titel-text-color);
+}
+/* стиль для li */
+.menu-item {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.menu-item:not(:last-child) {
+  margin-right: 50px;
+}
+.menu-list {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 40px;
+}
+
+.mail-link {
+}
+/* Ссылка активная */
+.menu-link:hover,
+.menu-link:focus,
+.menu-link:active {
+  color: var(--accent-color);
+}
+
+.mail-link:active,
+.mail-link:hover,
+.mail-link:focus {
+  color: var(--accent-color);
+}
+
+.tel-link:hover,
+.tel-link:focus,
+.tel-link:active {
+  color: var(--accent-color);
+}
+
+/* ================================ END HEADER ================================== */
+
+/* =================================MAIN========================================== */
+/* Эффективное решение для вашего бизнеса */
+.hero-name {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: var(--color-main-button);
+}
+/* Кнопка */
+.modal-btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+
+  display: flex;
+  letter-spacing: 0.06em;
+
+  color: var(--color-main-button);
+  background-color: var(--accent-color);
+
+  cursor: pointer;
+  border: transparent;
+}
+
+/* <!-- Особенности --> */
+.heading-stction-features {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+/*<!-- стиль для заголовков секции "Чем мы занимаемся" и "Наша команда"-->*/
+.style-main-heading {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+/* Стиль для параграфов из секции "Особенности"*/
+.style-under-heading {
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+/* Стиль для заголовкой из секции "Наша команда" */
+.style-section-heading-team {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+
+  text-align: center;
+}
+
+/* Стиль для параграфов из секции "Наша команда" */
+.style-section-team {
+  font-size: 16px;
+  line-height: 1.19;
+
+  text-align: center;
+}
+/* ==================================== END MAIN ==================================== */
+
+/* ============================== FOOTER ========================================= */
+.footer-link {
+  color: var(--color-main-button);
+
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+
+  text-decoration: none;
+}
+.footer-link:focus,
+.footer-link:hover {
+  color: var(--accent-color);
+}
+/* ================================== END FOOTER ============================= */
+
+/* ================================== PORTFOLIO ========================= */
+.filter-btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+
+  text-align: center;
+
+  /* прозрачность */
+  background-color: transparent;
+
+  color: var(--primary-text-color);
+  cursor: pointer;
+  border: transparent;
+}
+.filter-btn:focus,
+.filter-btn:hover {
+  background-color: var(--accent-color);
+  color: var(--bac-color-buttons);
+}
+
+/* стиль для залоговков списков */
+.heading-list-portfolio {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+
+  letter-spacing: 0.06em;
+}
+
+/*Стиль для параграфов списка */
+.under-heading-portfilio {
+  font-size: 16px;
+  line-height: 1.9;
+}
+/* =============================== END PORTFOLIO ======================= */
