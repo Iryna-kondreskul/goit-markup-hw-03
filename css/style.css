@@ -223,21 +223,17 @@ img {
   background: var(--color-line);
 }
 
-/* //////////////////////////////////////// */
 /* <!-- Особенности --> */
 
 .list-section-work {
   display: flex;
   list-style: none;
   margin-left: 94px 215px;
-  /* outline: 2px solid red; */
 }
 
 .list-features:not(:last-child) {
   margin-right: 30px;
-  /* outline: 2px solid black; */
 }
-/* ///////////////////////////////////// */
 
 .heading-stction-features {
   font-weight: 700;
@@ -255,7 +251,6 @@ img {
   text-align: center;
 
   margin: 94px 400px 50px;
-  /* outline: 2px solid red; */
 }
 .list-container-img:not(:last-child) {
   margin-right: 30px;
@@ -274,7 +269,6 @@ img {
 }
 
 .card-set {
-  /* outline: 2px solid red; */
   display: flex;
   padding: 0;
   margin: o;
@@ -286,7 +280,6 @@ img {
 }
 
 .our-team {
-  /* flex-basis: calc(100% / 4); */
   width: 270px;
   height: 368px;
   left: 215px;
@@ -298,11 +291,10 @@ img {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+
 .our-team:not(:last-child) {
   margin-right: 30px;
   margin-bottom: 94px;
-
-  /* outline: 2px solid black; */
 }
 .heading-name {
   margin-top: 30px;
@@ -428,7 +420,6 @@ img {
   margin-right: 300px;
   margin-bottom: 34px;
   justify-content: center;
-  /* outline: 2px solid red; */
 
   display: flex;
   width: 611px;
@@ -447,45 +438,51 @@ img {
   margin-right: 8px;
 }
 
-/* Контейнер с картинками */
+/* ---------------Контейнер с картинками ---------------*/
 /*  <!-- LIST IMAGES --> */
 
 /* ul */
 .img-card {
-  outline: 2px solid orangered;
   display: flex;
   flex-wrap: wrap;
 
-  margin: right -30px;
+  margin-left: -30px;
   margin-top: -30px;
 
-  flex-basis: calc(100% / 3 -20px);
+  padding: 94px 0;
+  list-style: none;
 }
 
 /* li */
-.item {
-  outline: 2px solid rgb(92, 37, 17);
-  margin: right 30px;
+.item-card {
+  flex-basis: calc((100% / 3 - 30px));
+
+  margin-left: 30px;
   margin-top: 30px;
-}
 
-/* article */
-.card {
-}
+  width: 370px;
+  height: 404px;
+  left: 215px;
+  top: 262px;
 
-/* div */
-.card-thumb {
+  background: var(--color-main-button);
+  border: 1px solid var(--maket-color);
+  box-sizing: border-box;
 }
 
 /* div */
 .card-content {
+  width: 322px;
+  height: 70px;
+  left: 239px;
+  top: 576px;
+
+  margin: 20px 24px;
 }
 
 /* h */
 .heading-list-portfolio {
+  margin-bottom: 4px;
 }
 
-/* p */
-.under-heading-portfilio {
-}
 /* =============================== END PORTFOLIO ======================= */
