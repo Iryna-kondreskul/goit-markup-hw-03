@@ -2,6 +2,7 @@
 :root {
   --primary-text-color: #212121;
   --titel-text-color: #757575;
+  --title-fon-body-color: #e5e5e5;
   --accent-color: #2196f3;
   --maket-color: #ececec;
   --section-dark-color: #2f303a;
@@ -12,7 +13,7 @@
 
 /* в body задаем цвет странички и цвет шрифта, стиль шрифта */
 body {
-  background-color: v(--color-main-button);
+  background-color: v(--maket-color);
   color: var(--titel-text-color);
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
@@ -121,7 +122,7 @@ img {
   color: var(--accent-color);
 }
 
-.header-color-info {
+.current {
   color: var(--accent-color);
 }
 .color-link-nav {
