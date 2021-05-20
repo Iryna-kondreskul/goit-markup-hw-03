@@ -101,7 +101,6 @@ img {
 }
 .header-nav {
   display: flex;
-  /* align-items: center; */
 }
 
 /* WebStudio */
@@ -128,6 +127,7 @@ img {
 .tel-link {
   color: var(--titel-text-color);
 }
+
 /* стиль для li */
 .menu-item {
   font-weight: 500;
@@ -205,17 +205,6 @@ img {
   padding: 10px 32px;
   margin: auto;
 }
-/* Линия после шапки */
-.line-section-work {
-  width: 1170px;
-  height: 2px;
-  left: 215px;
-  top: 715px;
-
-  margin: 35px 215px 57px;
-
-  background: var(--color-line);
-}
 
 /* <!-- Особенности --> */
 
@@ -270,9 +259,6 @@ img {
   margin: o;
   list-style: none;
   flex-wrap: wrap;
-
-  /* margin-right: -30px; */
-  /* margin-bottom: -94px; */
 }
 
 .our-team {
