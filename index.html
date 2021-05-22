@@ -20,41 +20,42 @@
 
 <body>
     <!-- Заполняем header -->
-    <header class="header ">
+    <header class="header">
         <div class="container header-container">
             <!-- Верхняя линия -->
             <!-- nav - навигация на другие страницы -->
-            <nav class="header-nav">
+            <nav class="nav-header">
                 <a class="logo-link link"
                 href="">Web<span style="color: #000000;">Studio</span>
                 </a>
             
-                <ul class="menu-list list">
+                <ul class="menu list">
             
-                    <li class="menu-item">
+                    <li class="nav-menu">
                         <a class="menu-link link current" href="">Студия</a>
                     </li>
             
-                    <li class="menu-item">
+                    <li class="nav-menu">
                         <a class="menu-link link color-link-nav" href="./portfolio.html">Портфолио</a>
                     </li>
             
-                    <li class="menu-item">
+                    <li class="nav-menu">
                         <a class="menu-link link color-link-nav" href="">Контакты</a>
                     </li>
                 </ul>
             </nav>
             
                 
-            <ul class="menu-list list">
-                <li class="menu-item">
-                    <a class="mail-link link tel-link" href="mailto:info@devstudio.com">
+            <ul class="contact list">
+
+                <li class="contact-menu">
+                    <a class="mail-link link" href="mailto:info@devstudio.com">
                         info@devstudio.com
                     </a>
                 </li>
             
-                <li class="menu-item">
-                    <a class="tel-link link color"
+                <li class="contact-menu">
+                    <a class="tel-link link"
                     href="tel:+380961111111">
                     +38 096 111 11 11
                     </a>
@@ -68,7 +69,8 @@
     <main>
 
         <!-- Шапка -->
-        <section class="section hero hero-section">
+        <!-- section hero-section -->
+        <section class=" hero ">
             <div class="container">
                 <h1 class="hero-name">
                     Эффективное решение для вашего бизнеса
@@ -85,7 +87,7 @@
         <!-- Особенности -->
         <section class="section-work">
             <div class="container">
-                <ul class="list-section-work list">
+                <ul class="section list-section-work list">
                     <li class="list-features">
                         <h3 class="heading-stction-features heading">
                             Внимание к деталям
@@ -154,8 +156,12 @@
                 <ul class="card-set list">
                     <li class="our-team">
                         <img src="./images/index/igor.jpg" alt="igor" width="270" height="260">
+
+                        <div class="team-card">
                         <h3 class="heading heading-name">Игорь Демьяненко</h3>
                         <p class="sect-text style-section-team under-heading">Product Designe</p>
+                        </div>
+                        
                     </li>
                 
                     <li class="our-team">
@@ -180,32 +186,34 @@
             
         </section>
     </main>
+<!-- --------------------------------- -->
+
 
     <!-- footer -->
     <footer class="site-footer">
         <div class="container">
-<a class="logo-link link footer-logo-link" href="./index.html" lang="en">
-    Web<span style="color: #ffffff">Studio</span>
-</a>
+
+    <a class="footer-logo link"  href="./index.html" lang="en">Web<span class="logo-color">Studio</span>
+    </a>
 
 <address class="footer-adres">
 
-    <ul class="list footer-list">
-        <li class="footer-list-adres">
-            <a class="footer-link link" href="https://goo.gl/maps/GLm2jWPZ9G5UtM699" target="_blank"
+    <ul class="list ">
+        <li class="">
+            <a class=" link" href="https://goo.gl/maps/GLm2jWPZ9G5UtM699" target="_blank"
                 rel="noreferrer noot">
                 г. Киев, пр-т Леси Украинки, 26
             </a>
         </li>
 
-        <li class="footer-list-adres">
-            <a class="footer-link link" href="mailto:info@example.com">
+        <li class="">
+            <a class=" link" href="mailto:info@example.com">
                 info@example.com
             </a>
         </li>
 
-        <li class="footer-list-adres">
-            <a class="footer-link link" href="tel:+380991111111">
+        <li class="">
+            <a class=" link" href="tel:+380991111111">
                 +38 099 111 11 11
             </a>
         </li>
