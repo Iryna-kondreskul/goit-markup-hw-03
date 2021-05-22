@@ -9,14 +9,7 @@
   --color-main-button: #ffffff;
   --bac-color-buttons: #f5f4fa;
   --color-line: #c4c4c4;
-}
-
-/* в body задаем цвет странички и цвет шрифта, стиль шрифта */
-body {
-  background-color: v(--maket-color);
-  color: var(--titel-text-color);
-  font-family: Roboto, sans-serif;
-  letter-spacing: 0.03em;
+  --color-footer-contact: #ffffff99;
 }
 
 /* Сброс отступов */
@@ -43,22 +36,23 @@ img {
   height: auto;
 }
 
-.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-  align-items: center;
-}
-
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-/* ======================== COMPONENTS ===========================================*/
 /*Отменяем подчеркивание у ссылок */
 .link {
   text-decoration: none;
+
+  /* Стили для ссылок */
+  margin-left: auto;
+  margin-right: 40px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+/* в body задаем цвет странички и цвет шрифта, стиль шрифта */
+body {
+  background-color: v(--maket-color);
+  color: var(--titel-text-color);
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
 }
 
 /* сброс точек в li */
@@ -83,12 +77,39 @@ img {
 .site-footer {
   background-color: var(--section-dark-color);
 }
+
+.container {
+  /* outline: 2px solid green; */
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.section {
+  /* outline: 2px solid yellow; */
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.logo-link,
+.logo-footer {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
+/* ======================== COMPONENTS ===========================================*/
+
 /* ========================= END COMPONENTS================================*/
+
 /* ========================== HEADER ================================ */
 .header {
   /* align-items: center; */
-
-  width: 1600px;
+  /* outline: 2px solid red; */
+  min-width: 1600px;
   height: 80px;
   left: 0px;
   top: 0px;
@@ -99,53 +120,57 @@ img {
   /* Центрирование по вспомогательной оси */
   align-items: center;
 }
-.header-nav {
+.nav-header {
   display: flex;
+  align-items: center;
 }
 
+.menu {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.contact {
+  display: flex;
+  margin-left: auto;
+}
 /* WebStudio */
 .logo-link {
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-
-  margin-bottom: 25px;
   margin: 0px 90px 0px 0px;
   padding: 24px 0px 25px;
 
   color: var(--accent-color);
 }
 
+/* Цвет странички на которой находится пользователь */
 .current {
   color: var(--accent-color);
 }
+
+/* Цвет текса ссылки в секции nav */
 .color-link-nav {
   color: var(--primary-text-color);
 }
 
-.tel-link {
+/* Цвет для телефона и почты */
+.tel-link,
+.mail-link {
   color: var(--titel-text-color);
 }
 
-/* стиль для li */
-.menu-item {
+/* стиль для li в nav секции и для тел,почты в ul*/
+.nav-menu,
+.contact-menu {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
 
-.menu-item:not(:last-child) {
+.nav-menu:not(:last-child),
+.contact-menu:not(:last-child) {
   margin-right: 50px;
-}
-.menu-list {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-  margin-right: 40px;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 /* Ссылка активная */
@@ -167,13 +192,25 @@ img {
   color: var(--accent-color);
 }
 
+.mail-link:hover,
+.mail-link:focus,
+.mail-link:active {
+  color: var(--accent-color);
+}
+
 /* ================================ END HEADER ================================== */
 
 /* =================================MAIN========================================== */
-/* Эффективное решение для вашего бизнеса */
-.hero-section {
-  height: 600px;
+.hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+
+  /* background-color: var(--footer-background-color); */
+
+  text-align: center;
 }
+/* Эффективное решение для вашего бизнеса */
+
 .hero-name {
   font-weight: 900;
   font-size: 44px;
@@ -183,7 +220,7 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
-  padding: 200px 237px 40px 237px;
+  margin-bottom: 30px;
 
   color: var(--color-main-button);
 }
@@ -211,8 +248,6 @@ img {
 .list-section-work {
   display: flex;
   list-style: none;
-  padding: 94px 0px;
-  margin-left: 94px 215px;
 }
 
 .list-features:not(:last-child) {
@@ -262,10 +297,10 @@ img {
 }
 
 .our-team {
-  width: 270px;
+  /* width: 270px;
   height: 368px;
   left: 215px;
-  top: 186px;
+  top: 186px; */
 
   background: var(--color-main-button);
 
@@ -277,8 +312,14 @@ img {
 .our-team:not(:last-child) {
   margin-right: 30px;
 }
+
+.team-card {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 .heading-name {
   margin-top: 30px;
+  margin-bottom: 10px;
   text-align: center;
 }
 
@@ -311,38 +352,21 @@ img {
 /* ==================================== END MAIN ==================================== */
 
 /* ============================== FOOTER ========================================= */
-
-.footer-link {
-  color: var(--color-main-button);
-
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.71;
-
-  text-decoration: none;
-}
-.footer-link:focus,
-.footer-link:hover {
-  color: var(--accent-color);
-}
 .site-footer {
   padding-top: 60px;
-  padding-bottom: 20px;
+  padding-bottom: 60px;
 }
 
-.footer-list-adres {
-  width: 231px;
-  height: 21px;
-  left: 215px;
-  top: 2208px;
+.footer-logo {
+  color: var(--accent-color);
+}
+.logo-color {
+  color: var(--color-main-button);
 }
 
-.footer-logo-link {
-  margin-bottom: 20px;
-}
-
-.footer-list-sdres {
-  margin-bottom: 9px;
+.footer-adres {
+  margin-top: 20px;
+  font-style: normal;
 }
 /* ================================== END FOOTER ============================= */
 
@@ -432,12 +456,7 @@ img {
 
 /* div */
 .card-content {
-  width: 322px;
-  height: 70px;
-  left: 239px;
-  top: 576px;
-
-  margin: 20px 24px;
+  padding: 20px 24px;
 }
 
 /* h */
