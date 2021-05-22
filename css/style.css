@@ -39,14 +39,17 @@ img {
 /*Отменяем подчеркивание у ссылок */
 .link {
   text-decoration: none;
-
-  /* Стили для ссылок */
-  margin-left: auto;
-  margin-right: 40px;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
+/* ------------------------------------------ */
+/* Стили для ссылок */
+
+/* margin-left: auto;
+  margin-right: 40px;
+  padding-top: 32px;
+  padding-bottom: 32px; */
+
+/* ------------------------------------ */
 /* в body задаем цвет странички и цвет шрифта, стиль шрифта */
 body {
   background-color: v(--maket-color);
@@ -93,8 +96,7 @@ body {
   padding-bottom: 94px;
 }
 
-.logo-link,
-.logo-footer {
+.logo-link {
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -358,6 +360,14 @@ body {
 }
 
 .footer-logo {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+
+  margin: 0;
+  padding: 0;
   color: var(--accent-color);
 }
 .logo-color {
@@ -367,6 +377,44 @@ body {
 .footer-adres {
   margin-top: 20px;
   font-style: normal;
+}
+
+.footer-contact {
+}
+
+/* ul */
+.footer-contact {
+  margin: 0;
+}
+
+.footer-contact
+
+/* li */
+.footer-contact-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footer-link,
+.footer-info {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.footer-link {
+  color: var(--color-main-button);
+}
+
+.footer-info {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-link:focus,
+.footer-link:hover,
+.footer-info:focus,
+.footer-info:hover {
+  color: var(--accent-color);
 }
 /* ================================== END FOOTER ============================= */
 
