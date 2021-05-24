@@ -87,7 +87,8 @@ body {
   padding-bottom: 94px;
 }
 
-.logo-link {
+.logo-link,
+.footer-logo {
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -354,12 +355,6 @@ body {
 }
 
 .footer-logo {
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  text-decoration: none;
-
   margin: 0;
   padding: 0;
   color: var(--accent-color);
@@ -371,9 +366,6 @@ body {
 .footer-adres {
   margin-top: 20px;
   font-style: normal;
-}
-
-.footer-contact {
 }
 
 /* ul */
