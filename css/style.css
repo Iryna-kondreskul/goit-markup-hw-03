@@ -43,7 +43,7 @@ img {
 
 /* в body задаем цвет странички и цвет шрифта, стиль шрифта */
 body {
-  background-color: v(--maket-color);
+  background-color: var(--maket-color);
   color: var(--titel-text-color);
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
@@ -82,7 +82,7 @@ body {
 }
 
 .section {
-  /* outline: 2px solid yellow; */
+  /* outline: 2px solid rgb(98, 11, 238); */
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -100,12 +100,9 @@ body {
 
 /* ========================== HEADER ================================ */
 .header {
-  /* align-items: center; */
   /* outline: 2px solid red; */
-  min-width: 1600px;
   height: 80px;
-  left: 0px;
-  top: 0px;
+  border: 1px solid var(--maket-color);
 }
 
 .header-container {
@@ -278,7 +275,7 @@ body {
 .list-img {
   display: flex;
   padding: 0;
-  margin: o;
+  margin: 0;
   list-style: none;
   flex-wrap: wrap;
 }
@@ -318,7 +315,6 @@ body {
   padding-bottom: 30px;
 }
 .heading-name {
-  margin-top: 30px;
   margin-bottom: 10px;
   text-align: center;
 }
